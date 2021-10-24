@@ -69,7 +69,7 @@ flash_messages();
 <input type="text" name="last_name" size="40"></p>
 <p>Email:
 <input type="text" name="email"></p>
-<p>Headline:
+<p>Position Applied For:
 <input type="text" name="headline"></p>
 <p>Summary:
 <textarea name="summary" rows="8" cols="80"></textarea>

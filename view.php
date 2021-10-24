@@ -29,7 +29,7 @@ $educations = loadEdu($pdo, $_REQUEST['profile_id']);
 <p><strong>First Name: </strong><?= $f ?></p>
 <p><strong>Last Name: </strong><?= $l ?></p>
 <p><strong>Email: </strong><?= $e ?></p>
-<p><strong>Headline: </strong><?= $h ?></p>
+<p><strong>Position Applied For: </strong><?= $h ?></p>
 <p><strong>Summary: </strong><?= $s ?></p>
 <p><strong>Position:</strong></p>
 <ul>
@@ -42,7 +42,7 @@ foreach($positions as $position) {
 }
 ?>
 </ul>
-<p>Education:</p>
+<p><strong>Education:</strong></p>
 <ul>
 <?php
 $edu = 0;

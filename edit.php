@@ -90,7 +90,7 @@ flash_messages();
 <input type="text" name="last_name" value="<?= $l ?>" size="40"></p>
 <p>Email:
 <input type="text" name="email" value="<?= $e ?>"></p>
-<p>Headline:
+<p>Position Applied For:
 <input type="text" name="headline" value="<?= $h ?>"></p>
 <p>Summary:</br>
 <textarea name="summary" rows="8" cols="80"><?= $s ?></textarea>
