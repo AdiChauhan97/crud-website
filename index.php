@@ -54,7 +54,7 @@ if ( isset($_SESSION['user_id']) ) {
   #if ($row == false) {
   #  echo("No rows found");
   #}
-  echo("<p><a href='add.php'>Add New Entry</a></p>");
+  echo("<p><a href='add.php'>Add New Resume</a></p>");
   echo("<a href='logout.php'>Logout</a>");
 }
  ?>

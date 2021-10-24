@@ -26,12 +26,12 @@ $educations = loadEdu($pdo, $_REQUEST['profile_id']);
 <body>
 <div class='container'>
 <h1>Resume Information</h1>
-<p> First Name: <?= $f ?></p>
-<p> Last Name: <?= $l ?></p>
-<p> Email: <?= $e ?></p>
-<p> Headline: <?= $h ?></p>
-<p> Summary: <?= $s ?></p>
-<p>Position:</p>
+<p><strong>First Name: </strong><?= $f ?></p>
+<p><strong>Last Name: </strong><?= $l ?></p>
+<p><strong>Email: </strong><?= $e ?></p>
+<p><strong>Headline: </strong><?= $h ?></p>
+<p><strong>Summary: </strong><?= $s ?></p>
+<p><strong>Position:</strong></p>
 <ul>
 <?php
 $pos = 0;
