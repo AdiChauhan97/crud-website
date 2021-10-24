@@ -63,9 +63,9 @@ if ( isset($_SESSION['error']) ) {
 ?>
 <form method="POST">
 <label for="email">User Name</label>
-<input type="text" name="email" id="email"><br/>
+<input type="text" name="email" id="email"><p>*name@gmail.com</p><br/>
 <label for="id_1723">Password</label>
-<input type="text" name="pass" id="id_1723"><br/>
+<input type="password" name="pass" id="id_1723"><p>*qwerty123</p><br/>
 <input type="submit" onclick="return doValidate();" value="Log In">
 <input type="submit" name="cancel" value="Cancel">
 </form>

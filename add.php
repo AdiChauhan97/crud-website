@@ -58,7 +58,7 @@ if ( isset($_POST['first_name']) && isset($_POST['last_name']) && isset($_POST['
 </head>
 <body>
 <div class='container'>
-<h1>Add A New Entry</h1>
+<h1>Add A New Resume</h1>
 <?php
 flash_messages();
 ?>

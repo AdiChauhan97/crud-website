@@ -36,7 +36,7 @@ if ( $row === false ) {
 </head>
 <body>
 <div class='container'>
-<h1>Deleting Profile</h1>
+<h1>Deleting Resume</h1>
 <form method="post" action="delete.php">
 <p>First Name: <?= htmlentities($row['first_name']) ?></p>
 <p>Last Name: <?= htmlentities($row['last_name']) ?></p>

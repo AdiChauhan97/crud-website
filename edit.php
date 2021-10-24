@@ -79,7 +79,7 @@ $schools = loadEdu($pdo, $_REQUEST['profile_id']);
 </head>
 <body>
 <div class= 'container'>
-<h1>Edit Data</h1>
+<h1>Edit Resume</h1>
 <?php
 flash_messages();
 ?>

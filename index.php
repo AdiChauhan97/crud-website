@@ -19,11 +19,11 @@ th, td {
 </head>
 <body>
 <div class= 'container'>
-<h1>Resume Registry</h1>
+<h1>Resume Recorder</h1>
 <?php
 if ( ! isset($_SESSION['user_id']) ) {
   echo("<p><a href='login.php'>Please log in</a></p>");
-  echo("<p><a href='add.php'>add.php</a> Should fail if not logged in.</p>");
+  //echo("<p><a href='add.php'>add.php</a> Should fail if not logged in.</p>");
 
 }
 if ( isset($_SESSION['success']) ) {
@@ -31,6 +31,7 @@ if ( isset($_SESSION['success']) ) {
     unset($_SESSION['success']);
   }
 if ( isset($_SESSION['user_id']) ) {
+  echo('<p>Please add your resumes here.</p>');
   echo('<table border="1">'."\n");
   $stmt = $pdo->query("SELECT first_name, last_name, headline, profile_id FROM profile");
   echo('<tr><th>Name</th><th>Headline</th><th>Action</th><tr>');
