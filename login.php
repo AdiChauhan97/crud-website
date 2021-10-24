@@ -62,10 +62,10 @@ if ( isset($_SESSION['error']) ) {
 }
 ?>
 <form method="POST">
-<label for="email">User Name</label>
 <div style="white-space:nowrap">
-<input type="text" name="email" id="email">
-<p>*name@gmail.com</p>
+    <label for="email">Email</label>
+    <input type="text" name="email" id="email">
+    <p>*name@gmail.com</p>
 </div>
 <br/>
 <label for="id_1723">Password</label>
