@@ -69,10 +69,8 @@ if ( isset($_SESSION['error']) ) {
 </div>
 <br/>
 <label for="id_1723">Password</label>
-<div style="white-space:nowrap">
 <input type="password" name="pass" id="id_1723">
-<p>*qwerty123</p>
-</div>
+<span>*qwerty123</span>
 <br/>
 <input type="submit" onclick="return doValidate();" value="Log In">
 <input type="submit" name="cancel" value="Cancel">
