@@ -109,7 +109,7 @@ echo('<div id="edu_fields">'."\n");
     echo('onclick="$(\'#edu'.$countEdu.'\').remove(); return false;">'."\n");
     echo("</p>\n");
     echo("<p>School: ");
-    echo('<input type="text" size="80" name="edu_school'.$countEdu.'"'); 
+    echo('<input type="text" size="80" class="school" name="edu_school'.$countEdu.'"'); 
     echo('value="'.htmlentities($school['name']).'"/>'."\n");
     echo('</div>');
     //echo(htmlentities($school['name'])."\n");
