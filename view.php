@@ -5,7 +5,8 @@ require_once "util.php";
 
 session_start();
 
-$stmt = $pdo->query("SELECT first_name, last_name, email, headline, summary, profile_id FROM profile");
+$stmt = $pdo->query("SELECT * FROM profile where profile_id = :xyz");
+$stmt->execute(array(":xyz" => $_GET['profile_id']));
 while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
   $f = htmlentities($row['first_name']);
   $l = htmlentities($row['last_name']);
