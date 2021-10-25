@@ -41,7 +41,7 @@ foreach($educations as $education) {
 }
 ?>
 </ul>
-<p><strong>Position:</strong></p>
+<p><strong>Previous Positions:</strong></p>
 <ul>
 <?php
 $pos = 0;

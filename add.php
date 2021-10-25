@@ -77,7 +77,7 @@ flash_messages();
   <input type="submit" id="addEdu" value="+">
   <div id="edu_fields"></div>
 </p>
-<p>Position:
+<p>Previous Positions:
   <input type="submit" id="addPos" value="+">
   <div id="position_fields"></div>
 </p>

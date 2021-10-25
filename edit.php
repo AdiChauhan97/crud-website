@@ -102,11 +102,11 @@ echo('<div id="edu_fields">'."\n");
 
   foreach( $schools as $school) {
     $countEdu++;
-    echo('<div id="education'.$countEdu.'">'."\n");
+    echo('<div id="edu'.$countEdu.'">'."\n");
     echo('<p>Year: <input type="text" name="edu_year'.$countEdu.'"');
     echo('value="'.$school['year'].'"/>'."\n");
     echo('<input type="button" value="-"');
-    echo('onclick="$(\'#education'.$countEdu.'\').remove(); return false;">'."\n");
+    echo('onclick="$(\'#edu'.$countEdu.'\').remove(); return false;">'."\n");
     echo("</p>\n");
     echo("<p>School: ");
     echo('<input type="text" size="80" name="edu_school'.$countEdu.'"'); 
@@ -119,7 +119,7 @@ echo("</div></p>\n");
 
 
 $countPos = 0;
-echo('<p>Position: <input type="Submit" id="addPos" value="+">'."\n");
+echo('<p>Previous Positions: <input type="Submit" id="addPos" value="+">'."\n");
 echo('<div id="position_fields">'."\n");
 foreach( $positions as $position) {
   $countPos++;
