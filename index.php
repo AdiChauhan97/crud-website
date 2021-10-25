@@ -31,7 +31,7 @@ if ( isset($_SESSION['success']) ) {
     unset($_SESSION['success']);
   }
 if ( isset($_SESSION['user_id']) ) {
-  echo('<p>Please add your resumes here.</p>');
+  echo('<p>Please add resumes here.</p>');
   echo('<table border="1">'."\n");
   $stmt = $pdo->query("SELECT first_name, last_name, headline, profile_id FROM profile");
   echo('<tr><th>Name</th><th>Position Applied For</th><th>Action</th><tr>');

@@ -31,6 +31,16 @@ $educations = loadEdu($pdo, $_REQUEST['profile_id']);
 <p><strong>Email: </strong><?= $e ?></p>
 <p><strong>Position Applied For: </strong><?= $h ?></p>
 <p><strong>Summary: </strong><?= $s ?></p>
+<p><strong>Education:</strong></p>
+<ul>
+<?php
+$edu = 0;
+foreach($educations as $education) {
+  $edu++;
+  echo('<li>'.$education['year'].": ".$education['name'].'</li>');
+}
+?>
+</ul>
 <p><strong>Position:</strong></p>
 <ul>
 <?php
@@ -39,16 +49,6 @@ foreach($positions as $position) {
   $pos++;
   echo('<li>'.$position['year'].": ".$position['description'].'</li>');
 
-}
-?>
-</ul>
-<p><strong>Education:</strong></p>
-<ul>
-<?php
-$edu = 0;
-foreach($educations as $education) {
-  $edu++;
-  echo('<li>'.$education['year'].": ".$education['name'].'</li>');
 }
 ?>
 </ul>

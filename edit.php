@@ -97,7 +97,7 @@ flash_messages();
 
 <?php
 $countEdu = 0;
-echo('<p>Education: <input type="Submit" id="addEdu" value="+">'."\n");
+echo('<p>Education: <input type="submit" id="addEdu" value="+">'."\n");
 echo('<div id="edu_fields">'."\n");
 
   foreach( $schools as $school) {
@@ -108,11 +108,13 @@ echo('<div id="edu_fields">'."\n");
     echo('<input type="button" value="-"');
     echo('onclick="$(\'#education'.$countEdu.'\').remove(); return false;">'."\n");
     echo("</p>\n");
-    echo('<textarea name="edu_school'.$countEdu.'" rows="8" cols="80">'."\n");
-    echo(htmlentities($school['name'])."\n");
-    echo("\n</textarea>\n</div>\n");
+    echo("<p>School: ");
+    echo('<input type="text" size="80" name="edu_school'.$countEdu.'"'); 
+    echo('value="'.htmlentities($school['name']).'"/>'."\n");
+    echo('</div>');
+    //echo(htmlentities($school['name'])."\n");
+    //echo("\n</textarea>\n</div>\n");
   }
-
 echo("</div></p>\n");
 
 
