@@ -5,16 +5,19 @@ require_once "util.php";
 
 session_start();
 
-$stmt = $pdo->query("SELECT * FROM profile where profile_id = :xyz");
+$stmt = $pdo->prepare("SELECT * FROM profile where profile_id = :xyz");
 $stmt->execute(array(":xyz" => $_GET['profile_id']));
-while ( $row = $stmt->fetch(PDO::FETCH_ASSOC) ) {
-  $f = htmlentities($row['first_name']);
-  $l = htmlentities($row['last_name']);
-  $e = htmlentities($row['email']);
-  $h = htmlentities($row['headline']);
-  $s = htmlentities($row['summary']);
-
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
+if ($row === false) {
+  $_SESSION['error'] = 'Bad value';
+  header('Location: index.php');
+  return;
 }
+$f = htmlentities($row['first_name']);
+$l = htmlentities($row['last_name']);
+$e = htmlentities($row['email']);
+$h = htmlentities($row['headline']);
+$s = htmlentities($row['summary']);
 $positions = loadPos($pdo, $_REQUEST['profile_id']);
 $educations = loadEdu($pdo, $_REQUEST['profile_id']);
 ?>
